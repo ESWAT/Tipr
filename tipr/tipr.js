@@ -1,6 +1,6 @@
 
 /*
-Tipr 1.0.1
+Tipr 1.0.3
 Copyright (c) 2013 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
@@ -18,9 +18,10 @@ http://www.tipue.com/tipr
 
           }, options);
 
-          var isTouchDevice = ('ontouchstart' in window);
+          var deviceHasTouch = !!('ontouchstart' in window);
+          var deviceHasMouse = !!('onmousemove' in window);
 
-          if (!isTouchDevice) {
+          if (!deviceHasTouch && deviceHasMouse) {
 
                return this.each(function() {
 
