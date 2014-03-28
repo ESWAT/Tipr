@@ -1,6 +1,6 @@
 
 /*
-Tipr 1.0.3
+Tipr 1.0.4
 Copyright (c) 2013 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
